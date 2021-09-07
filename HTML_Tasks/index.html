@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta http-equiv="refresh" content="10">  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tasks</title>		
+
+		<link rel = "stylesheet" type = "text/css" href = "css/style_layout_flex.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/style_layout_grid_spans.css">
+		<!-- <link rel = "stylesheet" type = "text/css" href = "css/style_layout_grid_areas.css"> -->
+		<link rel = "stylesheet" type = "text/css" href = "css/style_layout_prototype.css">		
+		<link rel = "stylesheet" type = "text/css" href = "css/style_layout_wireframe.css">		   
+        
+        <link rel = "stylesheet" href=  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link rel = "stylesheet" type = "text/css" href = "css/bootstrap-5.0.1-dist/css/bootstrap.css">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+
+        <style type = "text/css"> 
+            .blue { 
+                color: blue; 
+            }
+
+            .thick { 
+                font-weight: bold; 
+            }
+		</style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+		
+	<body>	
+
+        <main id="main-container">
+            <article id="article-container">
+
+
+                <div class="scroll-line" style="width:0%"></div>
+
+                <a name="top"></a>
+                <div id = "menu" align = "right" >
+                    <a href = "#Top">Top</a> | 
+                    <a href = "#Middle">Middle</a> | 
+                    <a href = "#Bottom">Bottom</a>
+                </div>
+
+                <!-- ----------------------Task 1---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 1</div>
+                            <div><b>Headings</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts -->    
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 2---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 2</div>
+                            <div><b>Formatting</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts -->
+                            <p>This is normal text. 
+                                <b>This is bold text.</b>
+                                <tt> This is a monospace text.</tt>
+                                <i> This is italic text.</i>
+                                <em> This is also italic text.</em>
+                                <u> This is underlined text.</u> 
+                                This is 
+                                <u>underlined </u>
+                                <i>italic</i>
+                                <tt>monospaced</tt>
+                                <b>bold</b>
+                                <strike>striked</strike>
+                                2<sup>2 (supscript)</sup>
+                                <mark>marked</mark>
+                                Log<sub>3 (subscript)</sub>
+                                text.
+                                <big> HELLO I AM BIG Text.</big>
+                                <small>HELLO I AM SMALL Text </small> 
+                                👋 
+                            </p>
+                            <hr style="height:0px" width="400px">
+                            <div style="border:1px solid black; ">
+                                <p align = "left">LEFT ALIGNED TEXT</p>
+                                <p align = "center">CENTER ALIGNED TEXT</p>
+                                <p align = "right">RIGHT ALIGNED TEXT</p>
+                            </div>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- ----------------------Task 3---------------------- --> 
+                
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 3</div>
+                            <div><b>Lists</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts -->
+                            <ol type="1" style="text-align: left; display: table; margin-left: auto; margin-right: auto;" >
+                                <li>Chapter 1</li>
+                                <li>Chapter 2
+                                    <ul style="list-style-type:disc">
+                                        <li>Chapter 2 Section 1 </li>
+                                        <li><span style = "color:blue">Chapter 2 Section 2</span></li>
+                                        <li><span style = "color:red">Chapter 2 Section 2 Item 1</span></li>
+                                        <li>Chapter 2 Section 2 Item 2</li>
+                                        <li>Chapter 2 Section 3</li>
+                                    </ul>
+                                </li>
+                                <li>Chapter 3</li>
+                                <li>Chapter 4</li>
+                            </ol>
+
+                            <h2 class="exercise">Exercise - Lists</h2>
+
+                            <ul id="navbar">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                        </ul>
+                
+                        <!--------------------------- Exercise - Lists--------------------------->
+                        <h2 class="exercise">Exercise - Lists</h2>
+                
+                        <h2>Definition List</h2>
+                        <dl>
+                            <dt>List of Items</dt>
+                            <dd>Item1</dd>
+                            <dd>Item2</dd>
+                            <dd>Item3</dd>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                        </dl>
+
+
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- ----------------------Task 4---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 4</div>
+                            <div><b>Images</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <img class="image-sd border-image" src="images/NAVTTC.png" alt="NAVTTC Logo" title="navttc logo"
+                            style="border-image-source: url('images/border.png');">
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 5---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 5</div>
+                            <div><b>Links</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <div>
+                                <a href="table.html">
+                                    <img src="images/NAVTTC.png" alt="Logo" style="width:100px; height:100px;">
+                                </a><br><br>
+                                <a href="./table.html">Opens Local file</a><br><br>
+                                <a href="../">Navigate to High Level Directory</a><br><br>
+                                <a href="https://www.google.com" target="_blank">Go to Google.com in NEW Tab</a><br><br>
+                                <a href="https://www.google.com" target="_self">Go to Google.com in SAME Tab</a><br><br>
+                                <a href="mailto:google@gmail.com"> Send email</a>
+                            </div>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 6---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 6</div>
+                            <div><b>Image Link</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <a href="https://www.google.com">
+                                <img  src="images/NAVTTC.png" alt="Google link" title="www.google.com" style="width:100px;height:100px;">
+                            </a><br>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 7---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 7</div>
+                            <div><b>Auto Refresh</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <p> Auto refresh after every 5 seconds</p><br>
+                            <!-- <meta http-equiv="refresh" content="5" /> -->
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 8---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 8</div>
+                            <div><b>Table</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts -->
+                        <table  border="1" bgcolor="yellow"> 
+                            <caption> Practice Table </caption>
+
+                            <tr>
+                                <th colspan="5" width="100" height="50">I am Table 1</th>
+                            </tr>
+                            
+                            <tr>
+                                <td align= "left" valign="top" width="100" height="80" >TL</td>
+                                <td align= "center" valign="top" width="100" height="80">TC</td>
+                                <td align= "right" valign="top" width="100" height="80">TR</td>
+                                <td rowspan="2" style="text-align:center" width="100" height="80">			
+                                    <table border="1" bgcolor="green">
+
+                                        <tr>
+                                            <th colspan="2" width="100" height="80">I am Table 2</th>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td width="50" height="80" ></td>
+                                            <td style="text-align:center" width="50" height="80">Pakistan</td>
+                                        </tr>							
+
+                                    </table>
+                                </td>
+                                
+                                <td style="text-align:center">Hello</td>
+                            </tr>
+                            
+                            <tr>
+                                <td align= "left" valign="middle" width="100" height="80">CL</td>
+                                <td align= "center" valign="middle" width="100" height="80">CM</td>
+                                <td align= "right" valign="middle" width="100" height="80">CR</td>
+                                <td style="text-align:center" width="100" height="80">Blank</td>
+
+                            </tr>
+                            
+                            <tr>
+                                <td align= "left" valign="bottom" width="100" height="80">BL</td>
+                                <td align= "center" valign="bottom" width="100" height="80">BC</td>
+                                <td align= "right" valign="bottom" width="100" height="80">BR</td>
+                                <td style="text-align:center" width="100" height="80">Blank</td>
+                                <td rowspan="2" style="text-align:center">I am a Merged Cell</td>
+                            </tr>
+                            
+                            <tr>
+                                <td style="text-align:center" width="100" height="80">Seventh</td>
+                                <td style="text-align:center" width="100" height="80">Eighth</td>
+                                <td style="text-align:center" width="100" height="80">Ninth</td>
+                                <td style="text-align:center" width="100" height="80">Blank</td>
+                            </tr>
+                        </table>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 9---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 9</div>
+                            <div><b>Frames</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                        <h2 style="color:red; text-align: center;">
+                            Frameset not supported in HTML5. Use iframe instead.
+                        </h2>
+
+                            <frameset cols = "25% , 50% , 25%">
+                                <frame name = "left" src = "/html/table.html" />
+                                <frame name = "center" src = "/html/table.html" />
+                                <frame name = "right" src = "/html/table.html" />
+                    
+                                <noframes>
+                                    <body>Your browser does not support frames.</body>
+                                </noframes>
+                            </frameset>
+
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <a name="Middle"></a>
+                <div id = "foot" align = "middle" >
+                    <a href = "#Top">Top</a> | 
+                    <a href = "#Bottom">Bottom</a>
+                </div>
+                
+                <!-- ----------------------Task 10---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 10</div>
+                            <div><b>Form</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            <!-- https://ishadeed.com/article/clickable-area/  Good UX Resource -->
+
+                            <div id="formErrorDiv">
+                                <h4 id="formErrorMessage" name="formErrorMessage" style="color:red; text-align: center;">
+                                    "font" tag is depricated in HTML5, use "p" tag instead.
+                                </h4>
+                            </div><br>
+                            
+                            <form action="google.com/form.html" method="POST" name= "biodataForm" id="biodataForm" onsubmit="formValidate()">
+                                <table border="1">
+                                    <tr>
+                                        <td style="text-align:center;vertical-align:top"  height="620" >
+                                            <font size="4" color="#000000">REPORT FORM</font>
+                                            <table border="1" >
+                                            <tbody>
+                                                <tr >
+                                                    <td colspan="2" style="text-align:center" bgcolor="green" height="50"><font size="5" color="#ffffff">INFORMATION TABLE</font></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td style="text-align:right"><label for="myName">NAME</label></td>
+                                                    <td>
+                                                        <input id="myName" name="myName" type="text"><br> 
+                                                        <font size="1" color="#000000">ENTER YOUR FULL NAME</font>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="text-align:right"><label for="email">EMAIL</label></td>
+                                                    <td>
+                                                        <input id="email" name="email" type="email" required><br> 
+                                                        <font size="1" color="#0000ff">ENTER AN INTERNET CONTACT ADDRESS</font>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right"><label for="password">PASSWORD</label></td>
+                                                <td>
+                                                    <input id="password" name="password" type="password" minlength="8" title="min 8 characters"><br> 
+                                                    <font size="1" color="#0000ff">ENTER CODE TO IDENTIFY YOU</font>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right"><label for="address">ADDRESS</label></td>
+                                                <td>
+                                                    <input id="address" name="address" type="text"><br> 
+                                                    <font size="1" color="#0000ff">COMPLETE ADDRESS</font>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right"><label for="country">COUNTRY</label></td>
+                                                <td>
+                                                    <select name="countries" id="countries">
+                                                        <option value="China">China</option>
+                                                        <option value="Syria">Syria</option>
+                                                        <option value="Russia">Russia</option>
+                                                        <option value="Pakistan" selected>Pakistan</option>
+                                                        <option value="Japan">Japan</option>
+                                                        <option value="Korea">Korea</option>
+                                                    </select>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right"><label for="gender">GENDER</label></td>
+                                                <td>
+                                                    <input type="radio" id="male" name="gender" value="male">
+                                                    <label for="male">Male</label>
+                                                    
+                                                    <input type="radio" id="female" name="gender" value="female">
+                                                    <label for="female">Female</label>
+                                                    
+                                                    <input type="radio" id="other" name="gender" value="other">
+                                                    <label for="other">Other</label>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right;vertical-align:top"><label for="hobbies">HOBBIES</label></td>
+                                                <td>
+                                                    <input type="checkbox" id="reading" name="hobbies" value="reading" checked> <label for="reading">READING</label><br>
+                                                    <input type="checkbox" id="music" name="hobbies" value="music"> <label for="music">LISTENING MUSIC</label><br>
+                                                    <input type="checkbox" id="gardening" name="hobbies" value="gardening"> <label for="gardening">GARDENING</label><br>
+                                                    <input type="checkbox" id="swimming" name="hobbies" value="swimming"> <label for="swimming">SWIMMING</label><br>
+
+                                                    <label>
+                                                        <input type="checkbox" id="athletics" name="hobbies" value="athletics">&nbspATHLETICS
+                                                    </label><br>				
+                                                    
+                                                    <font size="1" color="#0000ff">CLICK ALL THAT APPLY</font>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right"><label for="website">YOUR WEB SITE</label></td>
+                                                <td>
+                                                    <input id="website" name="website" type="text" placeholder="http://"><br> 
+                                                    <font size="1" color="#0000ff">PROVIDE YOUR WEB SITE URL IF EXISTS (Not Necessary)</font>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right"><label for="information">OTHER INFORMATION ABOUT YOU</label></td>
+                                                <td>
+                                                    <textarea id="information" cols="30" rows="5" name="Comment"></textarea><br>				
+                                                    <font size="1" color="#0000ff">WRITE ANY OTHER INFORMATION THAT IS NOT PRESENT HERE</font>
+                                                </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                <td style="text-align:right">
+                                                    <input type="image" src="images/submit.png" value="SEND" width="70px" height="30px">
+                                                    <!-- <input type="submit" value="SEND"> -->
+                                                    <!-- <button type="button" onclick="alert('Hello!')">SEND</button> -->
+                                                </td>
+                                                <td>
+                                                    <input type="reset" value="RESET">
+                                                </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 11---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 11</div>
+                            <div><b>Buttons with Images</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            <div class="button">	
+                                <input type="image" src="images/submit.png" value="SEND" width="70px" height="30px">
+                                <br><br>
+                    
+                                <button style="background-image: url('images/twitter.png') no-repeat; 
+                                width: 100px; height:100px" >Image Button
+                                </button>
+                                <br><br>
+                    
+                                <button onclick="JavaScript:alert('Image button!')">
+                                    <img src="images/twitter.png" alt="Twitter">
+                                    <br>Image Button!
+                                </button>
+                            </div><br>
+
+                            <!--------------------------- Exercise - Other Form elements--------------------------->
+                            
+                            <h2 class="exercise">Exercise - Other Form elements</h2>
+                            
+                            <form>	
+                                <label for="color">color:</label>
+                                <input type="color" name="color" id="color" tabindex="1"><br><br>
+                                
+                                <label for="file">file:</label>
+                                <input type="file" name="file" tabindex="1"><br><br>
+                                
+                                <label for="hidden">hidden:</label>
+                                <input type="hidden" name="hidden"tabindex="2"><br><br>
+                                
+                                <label for="number">number:</label>
+                                <input type="number" name="number" value="10" tabindex="4"><br><br>
+                                
+                                <label for="range">range:</label>
+                                <input type="range" name="range" tabindex="5"><br><br>
+                                        
+                                <label for="search">search:</label>
+                                <input type="search" name="search" tabindex="6"><br><br>
+                                        
+                                <label for="tel">tel:</label>
+                                <input type="tel" name="tel"><br><br>
+                                
+                                <label for="url">url:</label>
+                                <input type="url" name="url"><br><br>
+                                
+                                <label for="cities">Cities:</label>
+                                <input list="cities">
+                                
+                                <datalist id="cities">
+                                <option value="M">
+                                <option value="Abbottabad">
+                                <option value="Havelian">
+                                <option value="Mansehra">
+                                <option value="Islamabad">
+                                <option value="Karachi">
+                                </datalist>
+                                
+                                <br><br>
+                                
+                                <fieldset>
+                                    <legend>Timings:</legend>
+                                    <label for="month">month:</label>
+                                    <input type="month" name="month"><br><br>
+                                    
+                                    <label for="week">week:</label>
+                                    <input type="week" name="week"><br><br>
+                                    
+                                    <label for="date">date:</label>
+                                    <input type="date" name="date"><br><br>
+                                    
+                                    <label for="datetime-local">datetime-local:</label>
+                                    <input type="datetime-local" name="datetime-local"><br><br>
+                                    
+                                    <label for="time">time:</label>
+                                    <input type="time" name="time"><br><br>
+                                </fieldset>
+                            </form>
+
+                            <!-- ----------------------Exercise - Multimedia Elements (remove - from src path )---------------------- -->
+                            <h2 class="exercise">Exercise - Multimedia Elements</h2>
+
+                            <h2>Video</h2>
+                            <video width="320" height="240"  controls autoplay muted>
+                                <source src="images/Motivation.mp4" type="video/mp4">
+                                <source src="images/Motivation.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video><br>
+                            
+
+                            <h2>Audio</h2>
+                            <audio controls autoplay muted>
+                                <source src="images/saad.mp3" type="audio/mpeg">
+                                <source src="images/saad.ogg" type="audio/ogg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+                            <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ----------------------Task 12 ---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 12</div>
+                            <div><b>iFrame</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                    
+                            <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS -->
+                            
+                            <iframe src="http://www.kpbte.edu.pk/pages/result.aspx" name="first_iframe" scrolling="yes" width="600" height="300"></iframe>
+                            
+                            <iframe src="images/facebook.png" style="border:1px solid black;" name="second_iframe" title="second iframe" width="600" height="300"></iframe><br>
+                            
+                            <p><a href="https://www.youtube.com/embed/tgbNymZ7vqY?loop=1&controls=1&autoplay=0&mute=1" target="second_iframe">youtube.com</a></p>
+                            <p><a href="images/Emblem.png" target="second_iframe">local image file</a></p>
+                        
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div> 
+
+
+
+                <!-- ----------------------Exercise ---------------------- --> 
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 12</div>
+                            <div><b>Layout - Float/Position</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            <h2 class="exercise">Exercise - Layout - Float/Position</h2>	
+
+                            <div class="width-parent">
+                                <div class="width-child" >Child Div</div>
+                            </div>
+                            <br><br>
+
+                            <div class="floatContainer" >
+                                <img class="img-1" src="images/facebook.png" alt="facebook Image">
+                                <img class="img-2" src="images/twitter.png" alt="twitter Image">
+                                <img class="img-3" src="images/twitter.png" alt="twitter Image">
+                                <p class="textPara">
+                                    Lorem ipsum dolor sit labore debitis quia! Obcaecati ducimus voluptas. 
+                                    Lorem ipsum dolor sit labore debitis quia! Obcaecati ducimus voluptas. 
+                                    Lorem ipsum dolor sit labore debitis quia! Obcaecati ducimus voluptas.
+                                    Lorem ipsum dolor sit labore debitis quia! Obcaecati ducimus voluptas.
+                                </p>
+                            </div>
+
+                            <hr>
+
+                            <!--Position-->
+                            <div class="position-container">
+                                <div class="position-box" id="position-box-one">One</div>
+                                <div class="position-box" id="position-box-two">Two</div>
+                                <div class="position-box" id="position-box-three">Three</div>
+                                <div class="position-box" id="position-box-four">Four</div>
+                            </div>
+
+                            <br><br><hr>
+
+                            <!--Sticky-->
+                            <h3>Sticky Star.</h2>  
+                            <div class="sticky-container">
+                                <div class="sticky-item star-1">
+                                    <img  src="images/star.png" alt="sticky Image">
+                                    <h3>top: 0</h3>
+                                </div>
+                                <div class="sticky-item star-2">
+                                    <img  src="images/star.png" alt="sticky Image">
+                                    <h3>top: 2rem</h3>
+                                </div>
+                                <div class="sticky-item star-3">
+                                    <img  src="images/star.png" alt="sticky Image">
+                                    <h3>bottom: 1rem</h3>
+                                </div>
+                                <div class="sticky-item star-4">
+                                    <img  src="images/star.png" alt="sticky Image">
+                                    <h3>Static</h3>
+                                </div>
+                            </div><br>
+
+                            <!-- ----------------------Task ---------------------- --> 
+                            <!-- https://codecoda.com/en/blog/entry/css-layout-grid-vs-flexbox -->
+
+                            <h2 class="exercise" >Exercise - Layout - Flex (Responsive)</h2>	
+
+                            <div class="flex-container">
+                                <div class="flex-header-container">
+                                    <div class="flex-header flex-item"  title="Header">Header</div>
+                                    <div class="flex-navbar flex-item"  title="Navbar">Navbar</div>
+                                </div>
+                                <div class="flex-main-container">
+                                    <div class="flex-aside-left flex-item"   title="Aside">Aside</div>
+                                    <div class="flex-main flex-item"   title="Main">Main</div>
+                                    <div class="flex-aside-right flex-item">Aside</div>
+                                </div> 
+                                <div class="flex-footer-container"> 
+                                    <div class="flex-footer flex-item"  title="Footer">Footer</div>
+                                </div> 
+                            </div><br>
+                            
+                            <!-- ----------------------Task ---------------------- --> 
+                            <h2 class="exercise">Exercise - Layout - Grid (Responsive)</h2>	
+
+                            <div class="grid-container">
+                                <div class="item-header grid-item"  title="Header">Header</div>
+                                <div class="item-navbar grid-item"  title="Navbar">Navbar</div>
+                                <div class="item-aside grid-item"   title="Aside">Aside</div>
+                                <div class="item-main grid-item"    title="Main">Main</div>
+                                <div class="item-footer grid-item"  title="Footer">Footer</div>
+                            </div><br>
+
+                            <!-- ----------------------Task ---------------------- --> 
+                            <h2 class="exercise">Exercise - Layout - Wireframe (Flex)</h2>
+                            
+                            <div class="outer-container-wire" title="outer-container">
+                                <div class="header-wire" title="header">
+                                    <div class="brand-logo-wire" title="brand-logo" >
+                                        <div class="logo-wire" title="logo"></div>
+                                        <div class="brand-name-wire" title="brand-name"></div>
+                                    </div>
+                        
+                                    <div class="navbar-wire" title="nav">
+                                        <div class="navbar-item-wire" title="navbar-item"></div>
+                                        <div class="navbar-item-wire" title="navbar-item"></div>
+                                        <div class="navbar-item-wire" title="navbar-item"></div>
+                                        <div class="navbar-item-wire" title="navbar-item"></div>
+                                        <div class="navbar-item-wire" title="navbar-item"></div>
+                                        <div class="navbar-item-wire" title="navbar-item"></div>
+                                    </div>
+                                </div>
+                        
+                                <div class="main-container-wire" title="main-container">
+                                    <div class="aside-wire" title="aside"></div>
+                                    <div class="main-wire" title="main"></div>
+                                </div>
+                                <div class="footer-wire" title="footer"></div>
+                            </div>
+
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- ----------------------Task ---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 12 B</div>
+                            <div><b>Layout - Prototype</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <div class="layout" id="layout">	
+                                <header>
+                                    <img  class="header-bg" src="images/Emblem.jpg"	alt="header background image">
+                                    
+                                    <div class= "header-name">
+                                        <img class="header-image" src="images/NAVTTC.png" alt="logo"  >
+                                        <h1>GTVC BOYS ABBOTTABAD<h1>
+                                    </div>
+                                </header>
+                    
+                                <nav id="navbar">
+                                    <li><a href="cit.html">CIT</a></li>
+                                    <li><a href="electronics.html">Electronics</a></li>
+                                    <li><a href="ml.html">Machine Learning</a></li>
+                                    <li><a href="ai.html">Artificial Intellegence</a></li>
+                                </nav>
+                    
+                                <main class= "main">
+                                    <section class= "section">
+                                        <article class="article1">
+                                            <h3 class="h3-article">Overview</h3>
+                                            <p class="para">
+                                                The server appears to be down, or your connection isn't working as expected.
+                                                Please try again later. The server appears to be down, or your connection isn't working as expected.
+                                                Please try again later. The server appears to be down, or your connection isn't working as expected.
+                                                Please try again later.
+                                            </p>
+                                            <pre >The server appears to be down, <br>   or your connection isn't working as expected.</pre>
+                                        </article>
+                                        
+                                        <article class="article2-container" title="article2-container">
+                                            <h3 class="h3-article">About us</h3>
+                                            <p class="para">
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.	
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                            </p>
+                    
+                                            <img class="article2-image" src="images/NAVTTC.png" alt="image" title="image" >
+                    
+                                            <p class="para">
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                            </p>
+                    
+                                            <p class="para">
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later. 
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                                The server appears to be down, or your connection isn't working as expected. Please try again later.
+                                            </p>
+
+
+                                            <div class="flex-main-content" >
+                                                <div class="flex-dots"></div>
+                                            </div>
+
+                    
+                                            <div class= "social-image-container">
+                                                <img class= "social-image" src="images/twitter.png" alt="twitter image">	
+                                                <img class= "social-image" src="images/NAVTTC.png" alt="navttc image">	
+                                                <img class= "social-image" src="images/facebook.png" alt="facebook image">	
+                                            </div>
+                                        </article>
+                                        
+                                        <ul class="li-inline">
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                        </ul>
+                                    </section>
+                    
+                                    <aside class= "aside" >
+                                        <h3>Products</h3>
+                                        <a href="/services/">Services</a><br>
+                                        <a href="/products/">Products</a><br>
+                                        <a href="/careers/">Careers</a><br>
+                                        <a href="/contact/">Contact us</a><br>
+                                    </aside>
+                                </main>  
+                                
+                                <footer>
+                                    <div >
+                                        <a href="/services/">Services</a> |
+                                        <a href="/products/">Products</a> |
+                                        <a href="/careers/">Careers</a> |
+                                        <a href="/contact/">Contact us</a>
+                                    </div>
+                                </footer>
+                            </div>	        
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 13---------------------- --> 
+                <!-- https://www.w3schools.com/css/css_pseudo_elements.asp -->
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 13</div>
+                            <div><b>CSS</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            <p class="blue">Blue font color from Internal CSS</p>
+                            <p class="green">Green font color from External CSS</p>
+                            <p class="thick green">Combined styles from Internal(font color) & External(font weight) CSS</p>
+                            <p style = "color:green ; font-size:20px; height: 20px" title="CSS">Green Color and Font size from Inline CSS</p>
+                            
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 13---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 13</div>
+                            <div><b>Bootstrap</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            <div class="container-fluid p-5"> 
+
+                                <!-- Header -->
+                                <div class="row border border-2 border-dark rounded" >
+                                    <div class="col-sm-12 col-lg-12" style=" background-color: skyblue;">
+                                        <h3>Header</h3>                                   
+                                            
+                                        <nav class="row m-3 gx-3 d-flex justify-content-between">
+
+                                            <!-- Brand -->
+                                            <div class="col-sm-12 col-lg-2 border border-2 border-dark rounded d-none d-lg-block" style="margin-right:auto; background-color: lightblue; height:50px" >
+                                                <h3>Brand</h3>
+                                            </div>
+
+                                            <!-- Navbar -->
+                                            <div class="col-sm-12 col-lg-6 border border-2 border-dark rounded align-self-start" style="background-color: red; height:50px">
+                                                <h3>Navbar</h3>
+                                            </div>
+                                            
+                                        </nav>
+
+                                        <!-- Tagline -->
+                                        <div class="row m-3 gx-3" >
+                                            <div class="col-sm-12  col-lg-4 border border-2 border-dark rounded" style="background-color: greenyellow; height:100px">
+                                                <h3>Tag Lines</h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <!-- Aside -->
+                                    <aside class="col-sm-12 col-lg-4 border border-2 border-dark rounded " style="background-color: seagreen; ">
+                                        <h3>Aside</h3>
+                                        <nav class="navbar navbar-expand-sm">
+                                            Navbar
+                                        </nav>    
+                                    </aside>
+                                        
+                                    <!-- Main -->
+                                    <main class="col-sm-12 col-lg-8 border border-2 border-dark rounded " style="background-color: yellow; height:200px">
+                                        <h3>Main</h3>
+                                        <div >
+                                            <h4>DoB Calculator</h4><br>
+                                            <input id= "myAge" type="number" placeholder="31">
+                                            <input type="button" value="Calculate" onclick="ageCal()"><br><br>
+                                            <h4 id="dob" style="color:green">
+                                                Hi sir, your date of birth is 1990.
+                                            </h4>    
+                                        </div><br><br> 
+                                    </main>
+                                </div>
+
+                                <!-- Footer -->
+                                <footer class="row mt-3" style="background-color: orange; height:100px">
+                                    <div class="col-sm-12 border border-2 border-dark rounded ">
+                                        <div class="p-3">
+                                            <h3>Footer</h3>
+                                        </div>
+                                    </div>
+                                </footer>
+
+                            </div>
+
+
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 14---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 14</div>
+                            <div><b>Javascript Output Statement of JavaScript</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <h2 class="my_name" id="my_name">External "scripts.js" not loaded properly..</h2>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 15---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 15</div>
+                            <div><b>Use of if…else Condition</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <h1 id="current_time">Greetings!</h1>
+                            <img id="dayTime" src="images/Emblem.jpg" alt="Day time image"  height="100px" width="100px">
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task 16---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 16</div>
+                            <div><b>Use of Switch Statement</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <h2 id="current_day">Today is &nbsp;</h2>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ----------------------Task 17---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 17</div>
+                            <div><b>Loops to display numbers on screen</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <h3 id="display_count-for">Display count 5 to 15 for-loop</h2>
+                    
+                            <!-- ----------------------Exercise---------------------- --> 
+                            <h2 class="exercise">Exercise - Nested for-loop</h2>
+                            <h3 >Nested for-loop</h2>
+
+                            <button onclick="incDec(-1)"> - </button>
+                            <input type="number" id="steps" value="6" style="width:50px;">
+                            <button onclick="incDec(1)"> + </button>
+                            <button onclick="create()"> > </button>
+                            <ol id="playGround"></ol>
+
+                            <hr>    
+
+                            <!-- ------------------------------------------- --> 
+
+                            <h3>For-in loop:</h2><br>
+                            <h3 id="for-in"></h2>
+                            <hr>   
+
+                            <h3>For-of loop:</h2><br>
+                            <h3 id="for-of"></h2>
+                            <hr> 
+
+                            <h3 id="display_count-while">Display count 0 to 15 while-loop odd</h2>
+                            <hr> 
+                            
+                            <h3 id="display_count-do-while">Display count 0 to 15 do-while-loop even</h2>
+                            <hr> 
+
+                            <h3 id="display_count-for-if">Display count even-odd 0 to 10 for + if-else</h2>
+                            <!-- ----------------------Exercise ---------------------- --> 
+                            <h2 class="exercise">Exercise - Multiplication Table</h2>	
+                            
+                            <div id="tableDiv"></div>
+
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ----------------------Task function---------------------- --> 
+                
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 16</div>
+                            <div><b>Functions</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            
+                            <input name="tableInput" type="number" id="tableInput" placeholder="Table of.."/>
+                            <input name="tableStart" type="number" id="tableStart" placeholder="Start"/>
+                            <input name="tableEnd" type="number" id="tableEnd" placeholder="End"/>
+                            <input name="tableButton" type="button" id="tableButton" value="Go" onclick="mulTable()"/>
+
+                            <div id="function"></div>
+
+                            <!-- ----------------------Exercise Temperature  Converter---------------------- --> 
+                            <h2 class="exercise">Exercise - Temperature Converter</h2>
+
+                            <label>Temp:</label>
+                            <input name="userInput" type="number" id="userInput" placeholder="eg. 30"/>
+                            <br><br>
+                            <select name="fromUnit" id="fromUnit">
+                                <option value="K" selected>Kelvin</option>
+                                <option value="F">Farenheit</option>
+                                <option value="C">Celcius</option>
+                            </select>
+                            <label>To:</label>
+                            <select name="toUnit" id="toUnit">
+                                <option value="K" selected>Kelvin</option>
+                                <option value="F">Farenheit</option>
+                                <option value="C">Celcius</option>
+                            </select>
+                            <br><br>
+
+                            <input type="button" id="submitButton" value="Go" onclick="temperature()"/>
+                            
+                            <br><br><label><strong>Result:</strong></label>
+                            <input name="result" type="text" id="result" placeholder="Result" readonly/>
+
+
+                            <!-- ----------------------Exercise Unit Converter---------------------- --> 
+                            <h2 class="exercise">Exercise - Unit Converter</h2>
+
+                            <label>Feet:</label>
+                            <input name="convert" type="number" id="convert" placeholder="ft" onchange="feetMeters()"/>
+                            <input type="button" id="unitButton" value="Go" onclick="feetMeters()"/><br><br>
+                            <label>Meters:</label>
+                            <input name="converted" type="text" id="converted" placeholder="meters" readonly/>
+                            <input type="button" id="clearButton" value="Clear" onclick="clearAll();"/>
+                        
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>   
+                            
+                <!-- ----------------------Task 18---------------------- --> 
+                
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 18</div>
+                            <div><b>Auto Refresh webpage</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <h2 id="auto_refresh">Auto refresh after every 10 sec</h2>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div>  
+                
+                <!-- ----------------------Task 19---------------------- --> 	
+                
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 19</div>
+                            <div><b>Form Validation using JavaScript & JQuery</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+                            <h2 id="form_validation">Chk Task 10 for Form Validation</h2>
+                        <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- ----------------------Exercise 18---------------------- --> 
+
+                <div class="step_block" id="task-Container-1" style="display: flex; flex-direction: row;">
+                    <div class="panel panel-default action-step" style="flex: 1 1 700px;">
+                        <div class="panel-heading">
+                            <div class="pull-right">Task 19</div>
+                            <div><b>Exercise</b></div>
+                        </div>
+                        <div class="panel-body">
+                        <!-- Task Starts --> 
+
+                            <!--------------------------- Exercise - Bitwise--------------------------->
+                            <h2 class="exercise">Exercise - Bitwise</h2>
+                            <h2 id="bitwise">Bitwise</h2>
+
+                            <!--------------------------- Exercise - Rating system--------------------------->
+                            <h2 class="exercise">Exercise - Rating system</h2>
+
+                            <div id="rating">
+                                <label>5</label>
+                                <div class= "ratingBar" id="ratingBar5" style="background-color: green"></div><br>
+                                <label>4</label>
+                                <div class= "ratingBar" id="ratingBar4" style="background-color: greenyellow"></div><br>
+                                <label>3</label>
+                                <div class= "ratingBar" id="ratingBar3" style="background-color: yellow"></div><br>
+                                <label>2</label>
+                                <div class= "ratingBar" id="ratingBar2" style="background-color: orange"></div><br>
+                                <label>1</label>
+                                <div class= "ratingBar" id="ratingBar1" style="background-color: red"></div><br>
+                            </div>
+                            <br><br>
+                            <div id="ratingButtonDiv">
+                                <input class="ratingButton" id="ratingButton5" type="image" src="images/star.png"  value="5" width="50px" height="50px" onclick="rating;"/>
+                                <input class="ratingButton" id="ratingButton4" type="image" src="images/star.png"  value="4" width="50px" height="50px" onclick="rating;"/>
+                                <input class="ratingButton" id="ratingButton3" type="image" src="images/star.png"  value="3" width="50px" height="50px" onclick="rating;"/>
+                                <input class="ratingButton" id="ratingButton2" type="image" src="images/star.png"  value="2" width="50px" height="50px" onclick="rating;"/>
+                                <input class="ratingButton" id="ratingButton1" type="image" src="images/star.png"  value="1" width="50px" height="50px" onclick="rating;"/>
+                            </div>
+                    
+                            <!--------------------------- Exercise - Add child elements to parent--------------------------->
+                            <h2 class="exercise">Exercise - Add child elements to parent</h2> 
+
+                            <div style="display:flex;" >
+                                <div style="display:inline-block; border: 1px solid grey; min-width:150px; height:150px; background-color: white;">
+                                    <img id="clapButton" src="images/calapsInactive.png" style="width:70px;height:70px; margin-left: 30px" alt="image"/><br>
+                                    
+                                    <p  id="clapCounter" style="display:inline-block;font-size: 18px; margin-left: 30px">0</p>
+                                    <p  id="clapCounter" style="display:inline-block;font-size: 18px; margin-left: 5px">Claps</p>
+                                </div>            
+                                
+                                <div style="display:inline-block; border: 1px solid grey; min-width:150px; height: 150px; background-color: white;" >
+                                    <div id="starsDiv" style="display:flex; flex-wrap: wrap;"></div><br>
+                                    <div><input  id="starButton" type="button" value="Add Star"  onclick="addStar();"/></div>
+                                    
+                                </div>
+                            </div>
+
+                            <!--------------------------- Exercise Extra - Dynamic Form--------------------------->
+                            <h2 class="exercise">Exercise - Dynamic Form</h2>
+
+                            <h2>Adding Dynamic Items:</h2>
+                            <ul class="fields" id="fields" style="padding:0px">
+                                
+                            </ul>
+                            <input type="button" value="Add" name="addField" id="addField" class="addField">
+                            <input type="text" name="urlReq" id="urlReq" class="urlReq" placeholder="www.example.com">
+                            <select name="method" id="method">
+                                <option value="GET" selected>GET</option>
+                                <option value="POST">POST</option>
+                            </select>
+                            <input type="button" value="Send" name="sendReq" id="sendReq" class="sendReq" onclick= "dataSend()">
+                            <p class="output" id="output">Output:</p>
+
+
+                            <!--------------------------- Exercise - Redirect/Refresh--------------------------->
+                            <h2 class="exercise">Exercise - Redirect/Update/Refresh</h2>
+
+                            <input type="button" id="redirectButton" value="Redirect" onclick="pageRedirect();"/>
+                            <input type="button" id="reassignButton" value="Update" onclick="pageUpdate();"/>
+                            <input type="button" id="refreshButton" value="Refresh" onclick="pageRefresh();"/>
+
+                            <!--------------------------- Exercise - Dialog boxes--------------------------->
+                            <h2 class="exercise">Exercise - Dialog boxes</h2>
+
+                            <input type="button" id="alertButton" value="Alert" onclick="alertBox();"/>
+                            <input type="button" id="confirmButton" value="Confirm" onclick="confirmBox();"/>
+                            <input type="button" id="promptButton" value="Prompt" onclick="promptBox();"/>
+                            <br><br>
+                            <h3 name="dialogText" id="dialogText">Hi, Jalal</h3>
+
+                            <!--------------------------- Exercise - Jquery--------------------------->
+                            <h2 class="exercise">Exercise - Jquery</h2>
+
+                            <div class="jquerySlideDown">
+
+                                <h2 class="jqMenu" id="jqMenu" ><u>Menu</u>
+                                    <ul>
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                        <li>Item 4</li>
+                                        <li>Item 5</li>
+                                    </ul>
+                                </h2>
+
+                                <input type="button" id="slideDownButton"   value="SlideDown"/>
+                                <input type="button" id="slideUpButton"     value="SlideUp"/>
+                                <input type="button" id="slideToggleButton" value="SlideToggle"/>
+                            </div>
+                            <!-- Task Ends -->
+                        </div>
+                    </div>
+                </div> 
+
+
+
+
+
+                <!--------------------------- End --------------------------->
+                <a name="Bottom"></a>
+                
+                <div id = "foot" align = "middle" >
+                    <a href = "#Top">Top</a> | 
+                    <a href = "#Middle">Middle</a> | 
+                    <a href = "#Bottom">Bottom</a>
+                </div>
+               
+
+            </article>
+
+            <footer id="footer-container">
+
+
+    
+            </footer>
+
+        </main>
+
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script>
+            // alert("My name is Jalal");
+            // console.log("My name is Jalal");
+            /* var name= "My name is Jalal";
+            document.getElementById('display-name').innerHTML=name; */
+        </script>
+
+        <!-- open graph image for sharing -->
+        <meta property="og:image" content="images/Emblem.jpg"/>
+        <meta property="og:title" content="Web Dev Exercises"/>
+        <meta property="og:description" content="Web Dev Exercises."/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+
+	</body>
+</html>

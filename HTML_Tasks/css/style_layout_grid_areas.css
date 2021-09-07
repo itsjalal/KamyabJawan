@@ -1,0 +1,105 @@
+/*  -------------------------------  CSS Grid Areas ------------------------- */	
+
+.grid-container{
+    display:grid;
+    grid-template-columns: minmax(20%, 150px) 5fr; 
+    /*grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));*/
+    grid-template-rows:   1fr 0.5fr repeat(2, 2fr) .5fr;
+
+
+    /*grid-auto-rows: minmax(150px, auto) 1fr 1fr 3fr;*/
+    grid-row-gap:5px;
+    grid-column-gap:5px;
+
+    background-color: white;
+    border: 1px solid black;
+
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "aside main" 
+    "aside main"
+    "footer footer";
+
+/*	justify-content: center;  	/* justify grid container horizontally*/
+/*	align-content: center;  	/* align grid container vertically*/
+/*	justify-items: center;		/* align container items horizontally - default stretch*/
+/*	align-items:center;			/* align container items vertically - default stretch*/
+}
+
+.grid-item{
+    /*width: 150px;
+    margin: 10px;*/
+    text-align: center;
+    border: 2px  solid lightsalmon;
+    border-radius: 5px;
+    background-color: rgb(250, 198, 101);
+}
+
+.item-header{
+    background-color: red;
+    min-height: 100px;		
+    grid-area: header;
+
+    /*grid-column: 1/-1 | span 3;*/
+    /*grid-row: span 2;*/
+
+    /*align-self:start;
+     justify-self:center;*/
+}
+
+.item-navbar{
+    background-color: yellow;
+    min-height: 50px;
+    grid-area: nav;
+}	
+
+.item-aside{
+    background-color: blue;
+    min-height: 100px;
+    grid-area: aside;
+}
+
+.item-main{
+    background-color: purple;
+    min-height: 100px;
+    grid-area: main;
+}
+
+.item-footer{
+    background-color: orange;
+    min-height: 100px;
+    
+    grid-area: footer;
+}
+
+@media screen and (max-width: 700px){
+    
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr 2fr .5fr;
+        grid-template-areas: 			
+        "header"
+        "nav"
+        "aside"
+        "main"
+        "footer";
+    }
+
+    .item-aside{
+        background-color: greenyellow;
+        min-height: 30px;
+        grid-area: aside;
+    }
+
+} 
+
+@media (max-width: 700px){
+    
+    .item-footer{
+        background-color: red;
+        min-height: 30px;
+        grid-area: footer;
+    }
+
+} 

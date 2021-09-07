@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin:0px;
+}
+
+.outer-container-wire{
+    display:flex;
+    flex-direction:column;
+    background-color: red;
+    height:100%;
+    flex-grow: 1;
+}
+
+.header-wire{
+    display:flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: purple;
+}
+
+ .navbar-wire{
+    display:flex;
+    flex-direction: row;
+    min-height: 40px;
+    background-color: lightblue;
+    justify-content: center;
+ }
+
+ .navbar-item-wire{
+    min-width:60px;
+    width:100٪;
+    margin-right: 2px;
+    background-color: cyan;
+}
+
+.brand-logo-wire{
+    display:flex;
+    flex-direction:row;
+}
+
+.logo-wire{
+    width:100px;
+    height:100px;
+    margin: 10px;
+    background-color: lightcyan;
+
+    /* background-image: url("facebook.png"); */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-origin: content-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    /*background: green url("facebook.png") no-repeat fixed center;*/
+}
+
+.brand-name-wire{
+    flex-grow:1;
+    background-color: light;
+}
+
+.main-container-wire{
+    display:flex;
+    flex-direction:row;
+
+    height: 100%;
+    min-height: 100px;
+    background-color: violet;
+}
+
+.aside-wire{
+    width: 160px;
+    min-height: 300px;
+    flex-grow:0;
+    flex-shrink:0;
+
+    background-color: orange;
+}
+
+.main-wire{
+    min-height: 300px;
+    flex-grow:1;
+    flex-shrink:0; 
+
+    background-color: yellow;
+} 
+
+.footer-wire {
+    height: 100px;
+    min-height: 100px;
+    background-color: blue;
+
+}

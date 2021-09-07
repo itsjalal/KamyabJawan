@@ -1,0 +1,361 @@
+html, body {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  padding:10px;  /*set 0 for production*/
+  margin:0px;    /*set 0 for production*/
+}
+
+.green{
+   color: green;
+}
+
+hr {
+  width: 100%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 1px dashed grey;
+  transform: rotate(0deg);
+  opacity: 0.6;
+
+  background-color: transparent;
+  background-image: url(images/star.png);
+  background-repeat: repeat-x;
+  background-position: center;
+
+}
+/*--------------------- Scroll Line --------------------------*/
+.scroll-line{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  height: 5px;
+  margin-bottom: -2px;
+  background-color: red; 
+  width: 0%;
+}
+
+/*--------------------- Tasks  --------------------------*/
+.task{
+  border: 1px solid black;
+  text-align: center;
+  background-color: red;
+}
+
+.exercise{
+  border: 1px solid black;
+  text-align: center;
+  background-color: greenyellow;
+}
+
+.todo{
+    color: red;
+}
+
+/*--------------------- Task Container --------------------------*/
+.task-Container{
+  display: flex; 
+  flex-direction: row;
+}
+
+.panel-default {
+  border-color: rgb(221, 221, 221);
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  /* border: 1px solid transparent; */
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.panel-default>.panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+.work_check-step {
+  border-color: rgba(196, 179, 255, 1);
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 1.5em;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.panel-body:after {
+  clear: both;
+}
+
+.panel-body:before, .panel-body:after {
+  display: table;
+  content: " ";
+}
+
+.pull-right {
+  float: right !important;
+}
+
+/*------------------------ Float - Position ---------------------*/
+
+.width-parent {
+  display: inline-block;
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  background: rgba(114, 186, 94, 0.05);
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.width-child {
+  display: inline-block;
+  background: rgba(255, 110, 14, 0.568);
+  width: calc(100% - 200Px);  /* inherit|auto|initial|50%|50px */
+  height: 80px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*------------------------ Float ---------------------*/
+.floatContainer{
+  position:relative; 
+  border:1px solid grey; 
+  height:auto;
+}
+
+.img-1{
+  position:relative;     
+  float: left;   
+  top:0px; 
+  left:0px;
+
+  width: 100px; 
+  height:100px;
+}
+
+.img-2{
+  position:absolute; 
+  top:0px; left:0px; 
+  float:left; 
+  z-index:999;
+}
+
+.img-3{
+  float: right;
+}
+
+.textPara{
+  clear:both;
+}
+
+
+
+/*------------------------ Position ---------------------*/
+/* for an absolutely positioned element, 
+there should be a relatively positioned container */
+.position-container {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  border: 2px dashed rgba(114, 186, 94, 0.5);
+  background: rgba(114, 186, 94, 0.05);
+  border-radius: 5px;
+
+}
+
+.position-box {
+  display: inline-block;
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  padding:5px;
+}
+
+#position-box-two {
+  background: green;
+  /* position: absolute; */  
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+
+/*--------------- Position - Sticky ----------*/
+.sticky-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;  
+  height: 400px;
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  background: rgba(114, 186, 94, 0.05);
+  border-radius: 5px;
+}
+
+.sticky-item {
+  position: sticky;
+}
+
+.star-1 {
+  top: 0;
+}
+
+.star-2 {
+  top: 2rem;
+}
+
+.star-3 {
+  bottom: 1rem;
+  align-self: flex-end;
+}
+
+/*--------------------------------------------*/
+
+form,table {
+	margin: 0 auto; 
+}
+
+
+/* button:hover {
+  color: green;
+  background: #f06d06;
+} */
+
+.ol-center{
+  text-align: left; 
+  display: table; 
+  margin-left: auto;
+}
+
+dl {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.image-sd{
+	width:  100px;
+	height: 100px;
+	margin: 20px;	
+}
+
+.border-image{
+  border: 30px solid;
+  border-image: url('images/border.png') 28 / 28px / 0px stretch;
+/*   
+  background-color: white;
+  border-radius: 80px;
+  border-style: solid;
+  border-width: 27px;  
+
+  border-image-source: url("images/border.png");
+	border-image-slice: 27;  	
+	border-image-width: 27;  
+	border-image-outset: 0px;  
+	border-image-repeat: round round;
+*/
+
+}
+
+#tableInput, #tableStart, #tableEnd{
+  width: 90px;
+}
+
+/*  Rules for   */
+.ratingBar, div[class*='ratingBar-']{       /* ^= beginning with */
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+#rating{
+  display: inline-block;
+  width: 380px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/*---------------------- Footer --------------------------*/
+#main-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#article-container {
+  padding-bottom: 2.5rem;
+}
+
+#footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;        
+}
+/*------------------------------------------------*/
+.tip-container{
+  display:flex;
+}
+
+.tip {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 400px;
+  max-height: 280px;
+  background-color: #fff;
+  border: solid 1px grey;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tip-button {
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+  height: 30px;
+  width: 200px;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+}
+
+.tip-button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  width: 100%;
+  height:100%;
+}
+
+.tip span.highlight {
+  color: #dc3545;
+  font-size: bold;
+}
+
+.tip-text {
+  display: block;
+  margin: 15px 0;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 1em;
+}

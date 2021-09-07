@@ -1,0 +1,189 @@
+/*  -------------------------------  CSS Flex  ------------------------- */	
+/*
+.bg-class {
+    user-select: none;
+    cursor: pointer;
+    font-family: "Arial" "Calibri";
+    border: 10px dashed black;
+    border-style: dotted solid double dashed;
+    height: 200px;
+    background-color: #ffffff;
+    background-image: url("emblem.png")|linear-gradient(red, yellow, green)| radial-gradient(red, green, blue);
+    background-image: radial-gradient(red 50%, green 15%, blue 60%);
+    background-position: right top;
+    background-size: 300px 100px;
+    background-repeat: no-repeat|repeat-y|repeat-x|;
+    background-attachment: scroll|fixed|local|initial|inherit;
+    background-origin: padding-box|border-box|content-box;
+    background-clip: padding-box|border-box|content-box|initial|inherit;
+    
+    background: lightblue url("41dez1.jpg") position/bg-size no-repeat fixed center; 
+}
+
+.logo{	
+    background-color: blue;
+    background-image: url("facebook.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-origin: content-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+
+    background: green url("facebook.png") no-repeat fixed center;
+}
+
+body{
+    font-style:oblique|italic|normal;
+    font-variant:small-caps|normal|initial|inherit;
+    font-weight:normal|bold|bolder|lighter|initial|inherit|number;
+    font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;
+    line-height: normal|number|length|initial|inherit;
+    font-family: family-name|generic-family|initial|inherit;
+
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row|row-reverse|column|column-reverse;
+    flex-wrap: nowrap|wrap|wrap-reverse;
+    flex-flow:row|row-reverse|column|column-reverse (space) nowrap|wrap|wrap-reverse;
+    justify-content: flex-start(default)|flex-end|center|space-between|space-around|space-evenly;   (main-axis)
+    align-items: flex-start|flex-end|center|baseline|stretch(default);								(cross-axis)
+    align-content: flex-start|flex-end|center|space-between|space-around|stretch;
+    background-color: DodgerBlue;
+    
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    order:2|-2|1;
+    align-self: flex-start|flex-end|center|baseline|stretch(default);
+}
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+*/
+
+.flex-container{
+    display:flex;    
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    background-color: lightgoldenrodyellow;
+    border: 2px solid orange;
+    /*flex-flow: row wrap;   shorthand*/
+}
+
+.flex-item{
+    margin: 2px;
+    text-align: center;
+    border: 2px  solid lightsalmon;
+    border-radius: 5px;
+}
+
+.flex-header-container{
+    display:flex;    
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.flex-header{
+    background-color: red;
+    min-height: 100px;
+    flex-grow:1;
+    /* flex-shrink:1; */
+}		
+
+.flex-navbar{
+    background-color: Yellow;
+    min-height: 50px;
+    flex-grow:1;
+}	
+
+
+.flex-main-container{
+    display:flex;    
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 300px;
+}
+
+.flex-aside-left{
+    background-color: blue;
+    min-width: 100px;
+    flex-grow:0;
+    /* flex-shrink:1; */
+}
+
+.flex-aside-right{
+    background-color: blue;
+    min-width: 100px;
+    flex-grow:0;
+    /* flex-shrink:1; */
+}
+
+.flex-main{
+    background-color: purple;
+    min-height: 100px;
+    flex-grow:1;
+    /* flex-shrink:1; */
+}
+
+.flex-footer-container{
+    display:flex;    
+    flex-direction: column;
+
+    justify-content: stretch;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.flex-footer{
+    background-color: orange;
+    min-height: 100px;
+    flex-grow:1;
+    /* flex-shrink:1; */
+}
+/*flex-flow: row wrap; shorthand for*/
+
+@media screen and (max-width: 700px){ 
+    /*  For Desktop  */
+    
+    .flex-main-container{
+        display:flex;    
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 300px;
+    }
+
+    .flex-aside-left{
+        background-color: blue;
+        min-height: 60px;
+        flex-grow:0;
+        /* flex-shrink:1; */
+    }
+    
+    .flex-aside-right{
+        background-color: blue;
+        min-height: 60px;
+        flex-grow:0;
+        /* flex-shrink:1; */
+    }
+
+    .flex-main{
+        background-color: purple;
+        min-height: 300px;
+        flex-grow:1;
+        /* flex-shrink:1; */
+    }
+
+
+} 
